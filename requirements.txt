@@ -6,7 +6,6 @@ post==2018.11.20
 public==2018.11.20
 query-string==2018.11.20
 request==2018.11.20
-request-x==0.0.2
 requests==2.21.0
 requestx==0.0.7
 urllib3==1.24.1

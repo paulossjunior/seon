@@ -1,4 +1,4 @@
-from SEON.Project_Team_Service import Project_Team_Service
+from SEON.service.Project_Team_Service import Project_Team_Service
 from pprint import pprint
 
 team_x = Project_Team_Service()

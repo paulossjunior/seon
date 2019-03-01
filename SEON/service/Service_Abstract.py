@@ -7,7 +7,7 @@ class Service_Abstract (object):
         self.url = url
         self.request_x = RequestX()
 
-    def exist(self, id_tool):
+    def exists(self, id_tool):
 
         response = self.get_by_id_tool(id_tool)
         

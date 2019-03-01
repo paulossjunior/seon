@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='seon',  # Required
 
-    version='1.0.1',  # Required
+    version='1.0.2',  # Required
     packages=find_packages(),
     install_requires=[
         'requestx'

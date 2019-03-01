@@ -1,11 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='SEON',  # Required
+    name='seon',  # Required
 
     version='0.0.1',  # Required
-    packages=['SEON'],
-    install_requires=['requests'],  # Optional
+    packages=['seon'],
+    install_requires=['requests_x'],  # Optional
+    dependency_links=[
+        'git+https://gitlab.com/integration_seon/libs/request_x.git#egg=requests_x'
+    ],
 
-    
 )

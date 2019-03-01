@@ -1,10 +1,10 @@
 from requestx.RequestX import RequestX
 from pprint import pprint
 
-class Service (object):
+class Service_Abstract (object):
 
-    def __init__(self):
-        self.url = None
+    def __init__(self, url = None):
+        self.url = url
         self.request_x = RequestX()
 
     def exist(self, id_tool):

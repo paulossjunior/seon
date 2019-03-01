@@ -1,10 +1,10 @@
-from Service import Service
-class Project_Team_Service(Service):
+from .Service_Abstract import Service_Abstract
+
+class Project_Team_Service(Service_Abstract):
 
     def __init__(self):
-        self.url = 'http://localhost:9093/projectteams'
+        Service_Abstract.__init__(self,'http://localhost:9093/projectteams')
         
-
     def save (self, name, description, id_tool, url_tool):
 
         data = {'name': name, 

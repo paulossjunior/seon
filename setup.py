@@ -5,9 +5,11 @@ setup(
 
     version='0.0.3',  # Required
     packages=['seon'],
-    install_requires=['requests_x'],  # Optional
+    install_requires=[
+        'requests_x>0.0.7'
+    ],  # Optional
     dependency_links=[
-        'https://gitlab.com/integration_seon/libs/request_x.git#egg=requests_x=0.0.7'
+        'https://gitlab.com/integration_seon/libs/request_x.git#egg=requests_x'
     ],
 
 )

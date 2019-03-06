@@ -15,4 +15,5 @@ class Project_Service(Service_Abstract):
         return self.request_x.post(data,self.url)
     
     def get_all (self, organization_url):
-        return self.request_x.get(organization_url+'/projects')
+        result =  self.request_x.get(organization_url+'/projects').json()
+        return result['_embedded']['project']

@@ -16,7 +16,7 @@ class Project_Team_Service(Service_Abstract):
     
     def get_all (self, organization_url):
         result = self.request_x.get(organization_url+'/projectteams')
-        return result['_embedded']['project']
+        
  
     
     

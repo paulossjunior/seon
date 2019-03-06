@@ -3,7 +3,7 @@ from pprint import pprint
 
 class Service_Abstract (object):
 
-    def __init__(self, url = None):
+    def __init__(self):
         self.url = url
         self.request_x = RequestX()
 

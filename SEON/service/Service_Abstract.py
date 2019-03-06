@@ -1,9 +1,11 @@
 from requestx.RequestX import RequestX
 from pprint import pprint
+import json
+from collections import namedtuple
 
 class Service_Abstract (object):
 
-    def __init__(self):
+    def __init__(self, url = None):
         self.url = url
         self.request_x = RequestX()
 

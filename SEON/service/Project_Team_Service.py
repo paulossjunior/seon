@@ -15,5 +15,5 @@ class Project_Team_Service(Service_Abstract):
         return self.request_x.post(data,self.url)
     
     def get_all_by_project(self, project_url):
-        result = self.request_x.get(project_url+'projectTeams/').json()
+        result = self.request_x.get(project_url+'/projectTeams/').json()
         return result['_embedded']['projectTeam']

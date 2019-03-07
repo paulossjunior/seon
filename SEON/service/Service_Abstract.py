@@ -19,12 +19,12 @@ class Service_Abstract (object):
         return False
 
     def get_by_id_tool(self, id_tool):
-        return self.request_x.get(self.url+'/search/findByIdtool?idtool='+id_tool)
+        return self.request_x.get(self.url+'/search/findByIdtool?idtool='+id_tool).json()
 
     def connect(self, target_url, from_url):
-        return self.request_x.put_uri_list(target_url, from_url)
+        return self.request_x.put_uri_list(target_url, from_url).json()
     
     def update (self, url, data):
-        return self.request_x.patch(data, url)
+        return self.request_x.patch(data, url).json()
 
     

@@ -19,6 +19,17 @@ class Project_Team_Service(Service_Abstract):
         return result['_embedded']['projectTeam']
     
     def get_all_by_organization (self, organization_url):
-        pprint (organization_url+'/projectteams/')
         result =  self.request_x.get(organization_url+'/projectteams/').json()
         return result['_embedded']['projectTeam']
+
+    def get_all_team_members(self, project_team_url):
+        result =  self.request_x.get(project_team_url+'/teamMemberships/').json()
+        result = result['_embedded']['team_membership']
+        team_members = {}
+        for r in result:
+            team_member_url = r['_links']['teamMember']['href']
+            team_member = self.request_x.get(team_member_url).json()   
+            team_member_name = team_member['name']
+            team_members[team_member_name] = team_member
+        
+        return team_members

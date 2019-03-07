@@ -1,5 +1,5 @@
 from .Service_Abstract import Service_Abstract
-
+from pprint import pprint
 class Project_Team_Service(Service_Abstract):
 
     def __init__(self):
@@ -19,5 +19,6 @@ class Project_Team_Service(Service_Abstract):
         return result['_embedded']['projectTeam']
     
     def get_all_by_organization (self, organization_url):
-        result =  self.request_x.get(organization_url+'/projectTeams').json()
+        pprint (organization_url+'/projectteams/')
+        result =  self.request_x.get(organization_url+'/projectteams/').json()
         return result['_embedded']['projectTeam']

@@ -17,3 +17,7 @@ class Project_Team_Service(Service_Abstract):
     def get_all_by_project(self, project_url):
         result = self.request_x.get(project_url+'/projectTeams/').json()
         return result['_embedded']['projectTeam']
+    
+    def get_all_by_organization (self, organization_url):
+        result =  self.request_x.get(organization_url+'/projectTeams').json()
+        return result['_embedded']['projectTeam']

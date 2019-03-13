@@ -14,4 +14,4 @@ projct_x = Project_Service()
 
 #pprint (team_x.get_all_by_organization('http://localhost:9093/organizations/1/'))
 
-pprint (team_x.get_all_team_members('http://localhost:9093//projectteams/1/'))
+#pprint (team_x.get_all_team_members('http://localhost:9093//projectteams/1/'))

@@ -3,7 +3,7 @@ from pprint import pprint
 class Project_Team_Service(Service_Abstract):
 
     def __init__(self):
-        Service_Abstract.__init__(self,'http://localhost:9093/projectteams')
+        Service_Abstract.__init__(self,'projectteams')
         
     def save (self, name, description, id_tool, url_tool):
 

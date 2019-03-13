@@ -6,7 +6,8 @@ from collections import namedtuple
 class Service_Abstract (object):
 
     def __init__(self, url = None):
-        self.url = url
+        self.host = 'https://enterprise-ontology-service.herokuapp.com/'
+        self.url = self.host+url
         self.request_x = RequestX()
 
     def exists(self, id_tool):

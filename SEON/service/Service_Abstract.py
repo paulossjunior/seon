@@ -24,6 +24,7 @@ class Service_Abstract (object):
 
     def get_by_id_tool(self, id_tool):
         url = self.host+self.url+'/search/findByIdtool?idtool='+id_tool
+        
         response = self.request_x.get(url)
         
         if response.status_code == 404:

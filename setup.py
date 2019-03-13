@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='seon',  # Required
-    version='1.2.17',  # Required
+    version='1.2.20',  # Required
     author="Paulo Sergio dos Santo Junior",
     author_email="paulossjuniort@gmail.com",
     description="A lib to access the SEON Services ",
@@ -22,7 +22,4 @@ setup(
      ],
     setup_requires=['wheel'],
     
-    
-    
-
 )

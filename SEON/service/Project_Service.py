@@ -12,7 +12,7 @@ class Project_Service(Service_Abstract):
                 'idtool': id_tool,
                 'urltool': url_tool}
         
-        return self.request_x.post(data,self.url)
+        return self.request_x.post(data,self.host+self.url)
     
     def get_all_by_organization (self, organization_url):
         result =  self.request_x.get(organization_url+'/projects').json()

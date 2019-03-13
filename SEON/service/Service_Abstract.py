@@ -34,6 +34,8 @@ class Service_Abstract (object):
         
         
     def connect(self, target_url, from_url):
+        pprint (target_url)
+        pprint (from_url)
         return self.request_x.put_uri_list(target_url, from_url).json()
     
     def update (self, url, data):

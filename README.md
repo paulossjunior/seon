@@ -1,7 +1,9 @@
 # SEON
 
-## Instalação
-pip install -e git+https://gitlab.com/integration_seon/libs/request_x.git#egg=requestx
+## Tutorial para gerar a lib
 
-pip install -e git+https://gitlab.com/integration_seon/libs/seon.git#egg=SEON
+https://dzone.com/articles/executable-package-pip-install
+
+## Instalação
+pip install seon
 

@@ -3,12 +3,26 @@ from setuptools import setup, find_packages
 setup(
     name='seon',  # Required
     version='1.2.17',  # Required
+    author="Paulo Sergio dos Santo Junior",
+    author_email="paulossjuniort@gmail.com",
+    description="A wrapper of Requests",
+ 
+    url="https://github.com/paulossjunior/seon",
+ 
     packages=find_packages(),
+    
     install_requires=[
         'requestx'
     ],
-    dependency_links=[
-        'git+https://gitlab.com/integration_seon/libs/request_x.git'
-    ],
+
+    classifiers=[
+         "Programming Language :: Python :: 3",
+         "License :: OSI Approved :: MIT License",
+         "Operating System :: OS Independent",
+     ],
+    setup_requires=['wheel'],
+    
+    
+    
 
 )

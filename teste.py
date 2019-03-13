@@ -8,10 +8,5 @@ projct_x = Project_Service()
 pprint (team_x.exists('8b65fae0-4577-41cb-89e9-4fae2b1c4ad1'))
 pprint (team_x.exists('8b65fae0'))
 
-#pprint (projct_x.get_all_by_organization("http://localhost:9093/organizations/1/"))
-
-#pprint (team_x.get_all_by_project('http://localhost:9093/projects/1/'))
-
-#pprint (team_x.get_all_by_organization('http://localhost:9093/organizations/1/'))
-
-#pprint (team_x.get_all_team_members('http://localhost:9093//projectteams/1/'))
+projct_x.connect('https://enterprise-ontology-service.herokuapp.com/organizations/1',
+                'https://enterprise-ontology-service.herokuapp.com/projects/1')

@@ -5,7 +5,7 @@ setup(
     version='1.2.17',  # Required
     author="Paulo Sergio dos Santo Junior",
     author_email="paulossjuniort@gmail.com",
-    description="A wrapper of Requests",
+    description="A lib to access the SEON Services ",
  
     url="https://github.com/paulossjunior/seon",
  
